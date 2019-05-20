@@ -8,7 +8,7 @@
 
 </head>
 <body>
-	<p>Ceci est un test</p>
+	<p id=testp>Ceci est un test</p>
 
 
 
