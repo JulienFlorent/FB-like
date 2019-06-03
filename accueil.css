@@ -67,6 +67,10 @@ header a:hover
   text-decoration: underline;
 }
 
+.txtblanc {
+  color:white;
+}
+
   .header_haut
   {
     display: flex;
@@ -272,13 +276,13 @@ header a:hover
 
 .barre_laterale ul li a
 {
-  color: black;
+  color: white;
   font-size: 0.8em;
 }
 
 .barre_laterale ul li a:hover
 {
-  color: orange;
+  color: red;
 }
 
 .barre_laterale_droite
@@ -300,7 +304,7 @@ header a:hover
 
 .barre_laterale ul li a
 {
-  color: black;
+  color: white;
   font-size: 0.8em;
 }
 
