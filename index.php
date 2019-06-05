@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 		
@@ -103,49 +106,18 @@
 			    	</ul>
 			    </div>
 			    <main class="main_zone">
-			    	<div class="sous-main">
-			    		<h1>LIVRES</h1>
-			    		<p>Trouvez le livre qu'il vous faut dans toutes nos rubriques : Prix Littéraires, romans policiers, romans et littérature, BD, mangas, livres pour enfants, scolaire, Science-Fiction, histoire, Livres Amazon Original… et bien plus encore ! 
-			    		À la recherche d'idées cadeaux pour Noël ? Trouvez le livre qu'il vous faut dans notre sélection de Noël !
-
-</p>
-
-
-			    	</div>
-			     	<div class="sous-main">
-			     		<h1>NOUVEAUTES DU MOMENT</h1> 
-			     		<div class="livres">
-			     			<div class="livre">
-			     				<a href=""><img src="images/livre.jpg"></a>
-			     				<p>Titre livre 1</p>
-			     				<p>21,90€</p>
-			     			</div>
-			     			<div class="livre">
-			     				<a href=""><img src="images/livre.jpg"></a>
-			     				<p>Titre livre 2</p>
-			     				<p>21,90€</p>
-			     			</div>
-			     			<div class="livre">
-			     				<a href=""><img src="images/livre.jpg"></a>
-			     				<p>Titre livre 3</p>
-			     				<p>21,90€</p>
-			     			</div>
-			     			<div class="livre">
-			     				<a href=""><img src="images/livre.jpg"></a>
-			     				<p>Titre livre 4</p>
-			     				<p>21,90€</p>
-			     			</div>
-			     			<div class="livre">
-			     				<a href=""><img src="images/livre.jpg"></a>
-			     				<p>Titre livre 5</p>
-			     				<p>21,90€</p>
-			     			</div>
-			     			<div class="livre">
-			     				<a href=""><img src="images/livre.jpg"></a>
-			     				<p>Titre livre 6</p>
-			     				<p>21,90€</p>
-			     			</div>
-			     		</div>
+<?php
+include 'connectionbdd.php';
+if ($_SESSION == true) {
+	echo '
+	';
+	include 'contenu.php';
+	include 'logout.php';
+} else {
+	include 'login.php';
+	include 'inscription.php';
+}
+?>
 				</main>
 			</div>
 	    <footer class="pied_page">
