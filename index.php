@@ -1,8 +1,6 @@
 <?php
 session_start();
 ?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
 		
@@ -109,6 +107,7 @@ session_start();
 			    </div>
 			    <main class="main_zone">
 <?php
+include 'connectionbdd.php';
 if ($_SESSION == true) {
 	echo '
 	';
