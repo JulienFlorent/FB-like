@@ -1,65 +1,92 @@
 <?php
-<<<<<<< HEAD
-=======
-$mysqli = new mysqli("localhost", "root", "", "friendzonebdd");
-if ($mysqli->connect_errno) {
-    echo "Echec lors de la connexion à MySQL : (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}
+include 'ConnectDB.php';
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+		
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="accueil.css"/>	
+		<title>Projet friendzone</title>
+	</head>
+		
+	<body>
+		<div class="wrapper">
+			<header id="header" class="header">
+				
+					<a href="index.html" class="bloc_logo">
+						<img class="logo" alt="LOGO"  src="images\logo.png">
+					</a>
+					<div id="barre_recherche">
+					  <div id="nav-bar-left"></div>
+						  <form
+						    class="nav-searchbar"
+						    name="site-search"
+						    >
+						    <input type="hidden" name="">
+						    <div class="nav-left">
+						      <div id="nav-search-dropdown-card">
+						        
+								  <div class="nav-search-scope nav-sprite">
+								    <div class="nav-search-facade" data-value="search-alias=aps">
+								      <span class="nav-search-label"></span>
+								      <i class="nav-icon"></i>
+								    </div>
+							    	
+						  		</div>
+
+						      </div>
+						    </div>
+						    <div class="nav-fill">
+						      <div class="nav-search-field ">
+						      </div>
+						      <div id="nav-iss-attach"></div>
+						    </div>
+						    <div class="nav-right">
+						    </div>
+						  </form>
+
+					<div class="vide">  </div>
+				</div>		
+			</header>
+			<div class="navigation">
+		      <ul>
+		        <li><a href="">Acceuil</a></li>
+				<li><a href="">Amis</a></li>
+				<li><a href="">Profil</a></li>
+				<li><a href="">Messages</a></li>
+		      </ul>
+		    </div>
+
+
+			<div class="zone_centrale">
+				<div class="barre_laterale">
+			        
+			        <ul><h3 class="txtblanc">Messagerie</h3>
+			        	<li>
+			        		<div></div>
+			        	</li>
+			    	</ul>
+			    	
+			    </div>
+
+			    <div class="main_zone">
 <?php
->>>>>>> CROSS
-echo ' 
-<br>
-Pour vous inscrire, utilisez ce formunaire : 
-    <form action="" method="post">
-    <div>
-        <label for="NomUtilisateur">Nom :</label>
-        <input type="text" id="name" name="user_name">
-    </div>
-    <div>
-<<<<<<< HEAD
-=======
-        <label for="MailUtilisateur">Mail :</label>
-        <input type="text" id="name" name="user_name">
-    </div>
-    <div>
->>>>>>> CROSS
-        <label for="PrenomUtilsateur">Prénom</label>
-        <input type="text" id="name" name="user_name">
-    </div>
-    <div>
-        <label for="VilleUtilisateur">Votre ville : </label>
-        <input type="text" id="VilleUtilisateur" name="VilleUtilisateur"></input>
-    </div>
-    <div>
-        <label for="MotDePasseUtilisateur">Mot de passe : </label>
-        <input type="text" id="MotDePasseUtilisateur" name="MotDePasseUtilisateur"></input>
-    </div>
-    <div>
-    <label for="MotDePasseUtilisateur"><label>
-    <input type="button" value="Inscription">
-</div>
-<<<<<<< HEAD
-</form>       
-
-
-';
-=======
-</form>';
+include 'inscriptionscript.php';
 ?>
-<?php
-$nomutil = $_POST['NomUtilisateur'];
-$prenomutil = $_POST['PrenomUtilisateur'];
-$villeutil = $_POST['VilleUtilisateur'];
-$mdputil = $_POST['MotDePasseUtilisateur'];
-$mailutil = $_POST['MailUtilisateur'];
+			    	</div>
 
-if (!empty($_POST['NomUtilisateur']) && !empty($_POST['PrenomUtilisateur']) && !empty($_POST['MotDePasseUtilisateur'] && !empty($_POST['VilleUtilisateur']))) {
-    $sql = "INSERT INTO `utilisateur` (`IdUtilisateur`, `NomUtilisateur`, `PrénomUtilisateur`, `MotDePasseUtilisateur`, `AdresseMailUtilisateur`, `VilleUtilisateur`, `IdAmi`, `IdConversation`) VALUES (NULL, "$nomutil", "$prenomutil", "m$mdputil", "$mailutil", "$villeutil", '', '');";
-    $mysqli->query($sql);
-}
-?>
-<?php
+				</div>
+			</div>
+	    <footer class="pied_page">
+	    	<a class="footer-haut" href="#header">
+	    		Retour en haut
+	    	</a>
 
->>>>>>> CROSS
-?>
+	    	<div class="footer-bas">
+		        <a class="conditions" href="">Conditions générales</a>
+				<a id="perso" href="perso.html" id="mentions">Vos informations personnelles</a>	
+			</div>
+		</footer> 
+	</body>
+</html>

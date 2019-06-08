@@ -40,7 +40,7 @@ header
   color: white;
   display: flex;
   flex-direction : column;
-  background-color: darkslategrey;
+  background-color: firebrick;
   height: 100px;
   margin-bottom: 0;
 }
@@ -65,6 +65,10 @@ header a ul li
 header a:hover
 {
   text-decoration: underline;
+}
+
+.txtblanc {
+  color:white;
 }
 
   .header_haut
@@ -198,21 +202,12 @@ header a:hover
         border: 1px solid white;
       }
 
-      .zone_panier a p
-      {
-        color: white;
-      }
-
-        .logo_panier
-        {
-          height: 100%;
-          width: 100%;
-        }
+      
 
 
 .navigation
 {
-  border-bottom: 1px solid darkgrey;
+  border-top: 1px solid maroon;
 }
 
 .navigation ul 
@@ -222,8 +217,10 @@ header a:hover
   margin: 0;
   padding: 0;
   list-style: none;
-  background: white;
+  background: gray;
   width: 100%;
+  border-top-style:black;
+  border-top-size:5px; 
 }
 
   .navigation ul li 
@@ -243,15 +240,15 @@ header a:hover
 
   .navigation ul li a:hover 
   {
-    color: orange;
-    border-bottom: 2px solid orange;
+    color: firebrick;
+    border-bottom: 2px solid firebrick;
     margin-bottom: -2px;
   }
 
 
 .zone_centrale
 {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid darkgrey;
@@ -259,6 +256,36 @@ header a:hover
 }
 
 .barre_laterale
+{
+  width: 20%;
+  flex-direction: column;
+  padding-left: 20px;
+  height:600px;
+  background-color: firebrick;
+}
+
+.barre_laterale ul
+{
+  margin-bottom: 20px;
+}
+
+.barre_laterale ul li
+{
+  margin-left: 10px;
+}
+
+.barre_laterale ul li a
+{
+  color: white;
+  font-size: 0.8em;
+}
+
+.barre_laterale ul li a:hover
+{
+  color: red;
+}
+
+.barre_laterale_droite
 {
   width: 20%;
   flex-direction: column;
@@ -277,14 +304,15 @@ header a:hover
 
 .barre_laterale ul li a
 {
-  color: black;
+  color: white;
   font-size: 0.8em;
 }
 
 .barre_laterale ul li a:hover
 {
-  color: orange;
+  color: firebrick;
 }
+
 
 
 .main_zone
