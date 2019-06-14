@@ -72,15 +72,9 @@
 			    		<h1>CONNECTION</h1>
 			    			<article class=formulairementions>
 								<p>Se connecter<p></br>
-									<form method="POST" action="connection.php">
-										<label for="nom">Entrez votre nom: </label>
-											<input type="text" name="nom" id="nom"></br>
-										<label for="prenom">Entrez votre prenom: </label>
-											<input type="text" name="prenom" id="prenom"></br>
-										<label for="prenom">Entrez votre mot de passe: </label>
-											<input type="password" name="mdp" id="mdp"></br>
-						       			<button type="submit">Envoyer</button>
-						       			<button type="reset">Tout Effacer</button>
+<?php
+include 'connectionscript.php';
+?>
 									</form>
 							</article>
 			    	</div>

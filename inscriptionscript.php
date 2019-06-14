@@ -1,4 +1,6 @@
-<br>
+<?php
+session_start;
+?>
 Pour vous inscrire, utilisez ce formunaire : 
 <form action="" method="post">
 <div>
