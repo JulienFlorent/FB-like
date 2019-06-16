@@ -120,90 +120,6 @@ header a:hover
     padding-bottom: 20px;
   }
 
-    .vide2
-    {
-      width: 20%;
-    }
-
-    .liens_milieu
-    {
-      display: flex;
-      justify-content: space-around;
-      width: 45%;
-    }
-
-      .liste1
-      {
-        display: flex;
-        justify-content:space-around;
-        flex-direction: row;
-        align-items: center;
-      }
-
-      .liste1 li
-      {
-        margin: 10px;
-      }
-
-      .liste1 li:hover
-      {
-        text-decoration: underline;
-      }
-
-    .liens_droite
-    {
-    width: 35%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    }
-
-    .liens_droite a:link
-    {
-      text-decoration: none;
-    }
-
-
-      .lien_droite
-      {
-        width: 25%;
-        text-decoration: none;
-        padding-bottom: 20px;
-      }
-
-      #l2
-      {
-        padding-left: 15px;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .lien_droite:hover
-      {
-        border: 1px solid white;
-      }
-
-      .zone_panier
-      {
-        width: 25%;
-        margin-right: 15px;
-      }
-
-      .zone_panier a
-      {
-        width: 50%;
-        display: flex;
-      }
-
-      .zone_panier:hover
-      {
-       
-        border: 1px solid white;
-      }
-
-      
-
 
 .navigation
 {
@@ -285,12 +201,6 @@ header a:hover
   color: red;
 }
 
-.barre_laterale_droite
-{
-  width: 20%;
-  flex-direction: column;
-  padding-left: 20px;
-}
 
 .barre_laterale ul
 {
@@ -336,17 +246,6 @@ header a:hover
   padding-top: 20px;
 }
 
-.livres
-{
-  display: flex;
-  justify-content: space-around;
-}
-
-.livre a img
-{
-  padding-top: 20px;
-  width: 60%;
-}
 
 footer
 {
