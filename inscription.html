@@ -7,11 +7,44 @@
 		<title>Projet friendzone</title>
 	</head>
 		
-	<body class="wrapper">
+	<body>
+		<div class="wrapper">
 			<header id="header" class="header">
+				<div class="header_haut">
 					<a href="index.html" class="bloc_logo">
-						<img class="logo" alt="LOGO"  src="images\logo.png">
-					</a>		
+						<img class="logo" alt="LOGO"  src="images\logo2.png">
+					</a>
+					<div id="barre_recherche">
+					  <div id="nav-bar-left"></div>
+						  <form
+						    class="nav-searchbar"
+						    name="site-search"
+						    >
+						    <input type="hidden" name="">
+						    <div class="nav-left">
+						      <div id="nav-search-dropdown-card">
+						        
+								  <div class="nav-search-scope nav-sprite">
+								    <div class="nav-search-facade" data-value="search-alias=aps">
+								      <span class="nav-search-label"></span>
+								      <i class="nav-icon"></i>
+								    </div>
+							    	
+						  		</div>
+
+						      </div>
+						    </div>
+						    <div class="nav-fill">
+						      <div class="nav-search-field ">
+						      </div>
+						      <div id="nav-iss-attach"></div>
+						    </div>
+						    <div class="nav-right">
+						    </div>
+						  </form>
+						</div>
+					<div class="vide">  </div>
+				</div>		
 			</header>
 			<div class="navigation">
 		      <ul>
@@ -21,13 +54,13 @@
 				<li><a href="">Messages</a></li>
 		      </ul>
 		    </div>
+
+
 			<div class="zone_centrale">
 				<div class="barre_laterale">
 			        
-			        <ul><h3 class="txtblanc">Messagerie</h3>
-			        	<li>
-			        		<div></div>
-			        	</li>
+			        <ul><h3>Messagerie</h3>
+			        	<li><a href="">ici les conversations privées</a></li>
 			    	</ul>
 			    	
 			    </div>
@@ -46,6 +79,10 @@
 											<input type="text" name="ville" id="ville"></br>
 										<label for="nom">Entrez votre courriel: </label>
 											<input type="email" name="mail" id="mail" placeholder="exemple@exemple.fr"></br>
+										<label for="prenom">Composez votre mot de passe: </label>
+											<input type="password" name="mdp" id="mdp"></br>
+										<label for="prenom">Saisir à nouveau le mot de passe: </label>
+											<input type="password" name="mdp" id="mdp"></br>
 						       			<button type="submit">Envoyer</button>
 						       			<button type="reset">Tout Effacer</button>
 									</form>
@@ -64,6 +101,5 @@
 				<a id="perso" href="perso.html" id="mentions">Vos informations personnelles</a>	
 			</div>
 		</footer> 
-		<script type="text/javascript" src="friendzone_js.js"></script>
 	</body>
 </html>
