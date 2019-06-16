@@ -71,15 +71,6 @@ header a:hover
   color:white;
 }
 
-  .header_haut
-  {
-    display: flex;
-    width: 100%;
-    justify-content:space-around;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
 
     .bloc_logo
     {
@@ -90,36 +81,6 @@ header a:hover
       {
         width: 50%;
       }
-
-    .barre_recherche
-    {
-      flex-grow: 1;
-    }
-
-    .nav-searchbar
-    {
-    width: 100%;
-    display: flex;
-
-    }
-
-    .vide
-    {
-      width: 35%;
-    }
-
-  .header_bas
-  {
-    display: flex;
-    justify-content:space-around;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-left: 0px;
-    list-style: none;
-    width: 100%;
-    padding-bottom: 20px;
-  }
-
 
 .navigation
 {
